@@ -4,7 +4,6 @@ import "./components/style.components.css"
 import HeroPage from './components/HeroPage'
 import NavBar from './components/NavBar'
 import AboutMe from './components/AboutMe';
-import Vm from './components/Vm'
 
 export function App() {
   useEffect(() => {
@@ -12,6 +11,8 @@ export function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
         }
       });
     })
@@ -22,10 +23,10 @@ export function App() {
 
   return (
     <section className="content">
+      <canvas id="background"></canvas>
       <NavBar />
       <HeroPage />
       <AboutMe />
-      <Vm />
     </section>
   )
 }

@@ -14,7 +14,6 @@ const Vm = () => {
 const VmPopup = () => {
   return (
     <>
-
       <div className="popup_bg"></div>
       <div style="width:100vw;height:100vh;position:absolute;top:0;left:0;display:flex;justify-content:center;align-items:center;">
         <div className="popup_vm">
