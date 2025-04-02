@@ -1,13 +1,18 @@
-#app,body,html{
-  padding:0px;
-  margin:0px;
-  width:100vw;
-  overflow-x:hidden;
+#app,
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  min-width: 360px;
+  overflow-x: hidden;
 }
-ul{
-  list-style:none;
+
+ul {
+  list-style: none;
 }
-.content{
-  width:100vw;
-  height:auto;
+
+.content {
+  width: 100vw;
+  height: auto;
 }
