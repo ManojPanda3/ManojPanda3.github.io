@@ -39,7 +39,7 @@ jobs:
       - name: Install dependency
         run: bun i # installing 
       - name: Building
-        run: bun run building # installing 
+        run: bun run build # installing 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
